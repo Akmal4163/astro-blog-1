@@ -1,7 +1,38 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+const pageTitle = "About Page";
+
+const identity = {
+  firstName: "AAAAAA",
+  country: "BBBBB",
+  occupation: "CCCCC",
+  section: ["articles", "webgis", "projects"],
+};
+
+const skills = ["HTML", "CSS", "JavaScript", "Free Pascal", "WebGIS", "Astro", "Writing Docs"];
+const happy = true;
+const finished = false;
+const goal = 3;
+
+---
+</style>
 <body>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/blog">Blog</a>
-    <h1>About Page</h1>
+    <Header />
+    <h1>{pageTitle}</h1>
 	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quod distinctio fugit magnam adipisci nihil culpa a minus dolore labore! A nesciunt dolore quam unde nobis delectus aliquid tempora facere?</p>
-  </body>
+    <p>Here are a few facts about me:</p>
+    <ul>
+        <li>My name is {identity.firstName}.</li>
+        <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
+        {identity.section.length >= 2 &&
+          <li>Two of this section are: {identity.section[0]} and {identity.section[1]}</li>
+        }
+    </ul>
+    <p>My skills are:</p>
+    <ul>
+        {skills.map((skill) => <li>{skill}</li>)}
+    </ul>
+    <Footer />
+</body>
