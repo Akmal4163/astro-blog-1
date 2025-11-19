@@ -1,4 +1,5 @@
 ---
+layout: '../../layouts/MdPostLayouts.astro'
 title: 'Manifesto bagi Mereka yang Lebih Memilih Fungsi daripada Fantasi'
 pubDate: 2022-07-01
 description: 'Sebuah Pengakuan'

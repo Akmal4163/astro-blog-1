@@ -1,12 +1,10 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import BaseLayouts from '../layouts/BaseLayouts.astro';
 import '../styles/global.css';
 const pageTitle = "Blog Page";
 ---
 
-<body>
-    <Header />
+<BaseLayouts pageTitle={pageTitle}>
     <h1>{pageTitle}</h1>
     <ul>
         <li>
@@ -19,5 +17,4 @@ const pageTitle = "Blog Page";
             <a href="/posts/post-3">Post 3</a>
         </li>
     </ul>
-    <Footer />
-</body>
+</BaseLayouts>

@@ -1,4 +1,5 @@
 ---
+layout: '../../layouts/MdPostLayouts.astro'
 title: 'Mengapa Saya Bukan Marxis, Kapitalis, ataupun Feminis: Sebuah Manifesto Pemikiran Sintesis'
 pubDate: 2022-07-01
 description: 'Sebuah Pencarian Jalan Ketiga yang Koheren di Tengah Samudra Ideologi.'

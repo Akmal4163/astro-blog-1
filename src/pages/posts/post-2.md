@@ -1,4 +1,5 @@
 ---
+layout: '../../layouts/MdPostLayouts.astro'
 title: 'Georgisme & Reformasi Biometrik: Solusi Eleban untuk Keadilan Agraria Indonesia'
 pubDate: 2022-07-01
 description: 'Sebuah Pencarian Jalan Ketiga yang Koheren di Tengah Samudra Ideologi.'
