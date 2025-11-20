@@ -4,9 +4,6 @@ title: 'Manifesto bagi Mereka yang Lebih Memilih Fungsi daripada Fantasi'
 pubDate: 2022-07-01
 description: 'Sebuah Pengakuan'
 author: 'Akmal4163'
-image:
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["philosophy", "sociocultural-phenomena"]
 ---
 

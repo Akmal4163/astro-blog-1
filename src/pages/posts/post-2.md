@@ -4,9 +4,6 @@ title: 'Georgisme & Reformasi Biometrik: Solusi Eleban untuk Keadilan Agraria In
 pubDate: 2022-07-01
 description: 'Sebuah Pencarian Jalan Ketiga yang Koheren di Tengah Samudra Ideologi.'
 author: 'Akmal4163'
-image:
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["philosophy", "economy", "sociocultural-phenomena"]
 ---
 
