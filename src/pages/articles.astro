@@ -1,0 +1,33 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayouts from '../layouts/BaseLayouts.astro';
+import '../styles/global.css';
+const pageTitle = "Articles";
+const allPosts = await getCollection("articles");
+const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+---
+
+<BaseLayouts pageTitle={pageTitle}>
+    <div class="space-y-6">
+        <h1 class="text-2xl">{pageTitle}</h1>
+        <ul class="space-y-3">
+            { sortedPosts.map((post: any) => 
+                <li>
+                    <a class="underline" href={`/posts/${post.id}/`}>
+                    {post.data.title}
+                    </a>
+                    <p class="text-gray-400">
+                        { 
+                            new Date(post.data.pubDate).toLocaleDateString('ID-id', {
+                                year: 'numeric',
+                                month: '2-digit',
+                                day: '2-digit'
+                            })
+                        }
+                    </p>
+                </li>
+            )}
+        </ul>
+    </div>
+</BaseLayouts>

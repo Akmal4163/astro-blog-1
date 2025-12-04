@@ -1,12 +1,33 @@
 ---
-import Menu from "./Menu.astro";
 import Navigations from "./Navigations.astro";
 ---
 
 <header>
-    <h1>Mywebsite</h1>
-    <nav>
-        <Menu />
-        <Navigations />
-    </nav>
+    <div class="container mx-auto">
+        <div class="navbar bg-base-100 shadow-sm">
+            <div class="navbar-start">
+                <a href="/">
+                    <h1 class="text-3xl">Akmal4163</h1>
+                </a>
+            </div>
+            <div class="navbar-end">
+                <div class="hidden lg:flex items-center gap-4">
+                    <ul class="menu menu-horizontal px-1">
+                        <Navigations />
+                    </ul>
+                </div>
+                <!-- HAMBURGER MOBILE - Tampil di bawah lg -->
+                <div class="dropdown dropdown-end lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <Navigations />
+                    </ul>
+                </div>
+            </div>
+        </div>  
+    </div>  
 </header>

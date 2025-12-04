@@ -1,14 +1,13 @@
 ---
-layout: '../../layouts/MdPostLayouts.astro'
 title: 'Georgisme & Reformasi Biometrik: Solusi Eleban untuk Keadilan Agraria Indonesia'
-pubDate: 2022-07-01
+pubDate: 2025-07-10
 description: 'Sebuah Pencarian Jalan Ketiga yang Koheren di Tengah Samudra Ideologi.'
 author: 'Akmal4163'
 tags: ["philosophy", "economy", "sociocultural-phenomena"]
 ---
 
 
-# Georgisme & Reformasi Biometrik: Solusi Eleban untuk Keadilan Agraria Indonesia
+# Georgisme & Reformasi Biometrik: Solusi Elegan untuk Keadilan Agraria Indonesia
 
 ## Paradoks yang Memicu Pencarian
 

@@ -1,7 +1,6 @@
 ---
-layout: '../../layouts/MdPostLayouts.astro'
 title: 'Manifesto bagi Mereka yang Lebih Memilih Fungsi daripada Fantasi'
-pubDate: 2022-07-01
+pubDate: 2025-08-01
 description: 'Sebuah Pengakuan'
 author: 'Akmal4163'
 tags: ["philosophy", "sociocultural-phenomena"]

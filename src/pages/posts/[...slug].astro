@@ -1,0 +1,18 @@
+---
+import { getCollection, render } from 'astro:content';
+import MdPostLayouts from '../../layouts/MdPostLayouts.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('articles');
+  return posts.map(post => ({
+    params: { slug: post.id }, props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<MdPostLayouts frontmatter={post.data}>
+  <Content />
+</MdPostLayouts>
